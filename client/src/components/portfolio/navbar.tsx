@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Github, Instagram, Menu, X } from "lucide-react";
+import { Github, Linkedin, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -61,12 +61,12 @@ export function Navbar() {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.linkedin.com/in/mishti-goel"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <Instagram className="w-5 h-5" />
+            <Linkedin className="w-5 h-5" />
           </a>
         </div>
 
@@ -105,11 +105,11 @@ export function Navbar() {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.linkedin.com/in/mishti-goel"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Instagram className="w-6 h-6" />
+                <Linkedin className="w-6 h-6" />
               </a>
             </div>
           </div>
