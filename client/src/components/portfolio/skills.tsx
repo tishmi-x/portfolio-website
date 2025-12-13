@@ -41,7 +41,7 @@ export function Skills() {
           Skills
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="flex flex-col gap-6 max-w-3xl mx-auto">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.category}
@@ -49,10 +49,8 @@ export function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className={`p-8 rounded-2xl border bg-card hover:shadow-lg transition-all duration-300 group ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
+              whileHover={{ scale: 1.01 }}
+              className="p-6 md:p-8 rounded-2xl border bg-card hover:shadow-lg transition-all duration-300 group"
             >
               <div className="flex items-start gap-6">
                 <div className="p-4 bg-secondary/20 rounded-xl group-hover:bg-secondary/40 transition-colors">
