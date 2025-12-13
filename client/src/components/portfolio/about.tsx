@@ -35,7 +35,7 @@ export function About() {
           {content.map((item, index) => (
             <motion.div 
               key={index}
-              className="flex flex-col md:flex-row gap-8 md:gap-12 items-center"
+              className={`flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} gap-8 md:gap-12 items-center`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
