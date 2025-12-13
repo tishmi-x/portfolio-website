@@ -4,7 +4,7 @@ import achievementImage from "@assets/generated_images/hackathon_trophy.png";
 
 export function Achievements() {
   return (
-    <section id="achievements" className="py-24 bg-secondary/30">
+    <section id="achievements" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <motion.h2 
           className="text-3xl md:text-4xl font-bold font-display mb-16 text-center"

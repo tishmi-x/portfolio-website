@@ -23,7 +23,7 @@ export function Hero() {
             />
             <text className="text-[10px] uppercase font-bold tracking-[0.25em] fill-primary font-display">
               <textPath href="#circlePath" startOffset="50%" textAnchor="middle">
-                MISHTI GOEL CS UNDERGRADUATE
+                MISHTI GOEL CS UNDERGRADUATE 
               </textPath>
             </text>
           </svg>
