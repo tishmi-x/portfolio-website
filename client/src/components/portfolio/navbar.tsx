@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Github, Linkedin, Menu, X } from "lucide-react";
+import { Github, Send, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -66,7 +66,7 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <Linkedin className="w-5 h-5" />
+            <Send className="w-5 h-5 -ml-1 mt-1" />
           </a>
         </div>
 
@@ -109,7 +109,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin className="w-6 h-6" />
+                <Send className="w-6 h-6 -ml-1 mt-1" />
               </a>
             </div>
           </div>
