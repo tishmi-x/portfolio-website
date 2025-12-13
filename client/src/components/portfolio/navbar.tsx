@@ -66,7 +66,7 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <Send className="w-5 h-5 -ml-1 mt-1" />
+            <Send className="w-5 h-5" />
           </a>
         </div>
 
@@ -109,7 +109,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Send className="w-6 h-6 -ml-1 mt-1" />
+                <Send className="w-6 h-6" />
               </a>
             </div>
           </div>
