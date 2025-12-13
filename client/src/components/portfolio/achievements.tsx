@@ -24,9 +24,6 @@ export function Achievements() {
             whileHover={{ scale: 1.02 }}
             className="bg-secondary p-8 rounded-2xl shadow-xl border border-white/5 relative overflow-hidden group"
           >
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-primary-foreground">
-              <Trophy className="w-24 h-24" />
-            </div>
             
             <div className="relative z-10">
               <span className="inline-block px-3 py-1 bg-primary/20 text-primary-foreground text-xs font-bold rounded-full mb-4 border border-primary/20">
