@@ -77,6 +77,13 @@ export function About() {
                 box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
                 z-index: 20;
               }
+
+              @media (max-width: 768px) {
+                .polaroid-stack {
+                  margin: 0 auto;
+                  transform: scale(0.9);
+                }
+              }
             `}</style>
             
             <div className="polaroid-stack">
