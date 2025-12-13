@@ -25,18 +25,16 @@ export function About() {
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-8 text-primary">Myself</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                My journey into tech started with simple curiosity, which quickly turned into a passion for problem-solving. 
-                From writing my first lines of Python to diving into the structured world of C, I've fallen in love with 
-                those "aha!" moments when logic finally clicks.
+                I’m a Computer Science undergraduate who gradually developed an interest in technology through problem-solving. While I initially chose the field for its stability, my curiosity grew as I began spending time solving coding problems and understanding the logic behind them.
               </p>
               <p>
-                I'm currently exploring various domains of Computer Science, building my foundation in HTML & CSS, 
-                and constantly learning. I believe in a patient approach—understanding the 'why' behind the code 
-                is just as important as the syntax.
+                I started my programming journey with Python and am currently learning C, focusing on strengthening my fundamentals. I enjoy the process of tackling challenging problems — especially the moments when a problem that once felt difficult suddenly becomes simple through understanding.
               </p>
               <p>
-                When I'm not coding, I'm usually untangling complex logic or finding new ways to challenge myself. 
-                Growth, for me, is a continuous loop of learning, failing, and improving.
+                As I continue learning, I’m actively exploring different areas within computer science to better understand where my interests align. I also have a basic foundational understanding of HTML and CSS, gained through school-level learning and hands-on practice on platforms like freeCodeCamp.
+              </p>
+              <p>
+                I approach my journey with curiosity and patience, balancing academics, problem-solving, and continuous learning as I grow in the field.
               </p>
             </div>
           </motion.div>
