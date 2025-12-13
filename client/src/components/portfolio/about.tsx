@@ -43,30 +43,53 @@ export function About() {
 
           {/* Polaroid Stack */}
           <div className="relative h-[400px] w-full flex items-center justify-center mt-12 md:mt-0">
-            {polaroids.map((photo, index) => (
-              <motion.div
-                key={index}
-                className="absolute w-64 bg-white p-3 shadow-xl rounded-sm border border-gray-100"
-                style={{ 
-                  zIndex: photo.z,
-                }}
-                initial={{ rotate: photo.rotate, scale: 0.9 }}
-                whileHover={{ 
-                  rotate: 0, 
-                  scale: 1.1, 
-                  zIndex: 10,
-                  transition: { type: "spring", stiffness: 300 } 
-                }}
-                animate={{
-                  rotate: photo.rotate,
-                }}
-              >
-                <div className="aspect-square overflow-hidden mb-3 bg-gray-100">
-                  <img src={photo.src} alt={photo.caption} className="w-full h-full object-cover" />
-                </div>
-                <p className="text-center font-handwriting text-gray-600 text-sm font-medium">{photo.caption}</p>
-              </motion.div>
-            ))}
+            <style>{`
+              .polaroid-stack {
+                position: relative;
+                width: 320px;
+                height: 380px;
+              }
+              .polaroid {
+                position: absolute;
+                width: 260px;
+                height: auto;
+                padding: 12px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                transition: transform 0.4s ease, box-shadow 0.4s ease;
+                cursor: pointer;
+              }
+              .p1 {
+                transform: rotate(-8deg) translate(-20px, 10px);
+                z-index: 1;
+              }
+              .p2 {
+                transform: rotate(4deg) translate(20px, -10px);
+                z-index: 2;
+              }
+              .p3 {
+                transform: rotate(-2deg);
+                z-index: 3;
+              }
+              .polaroid:hover {
+                transform: translateY(-20px) scale(1.05);
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+                z-index: 20;
+              }
+            `}</style>
+            
+            <div className="polaroid-stack">
+              <div className="polaroid p1">
+                <img src={photo1} alt="Late nights" className="w-full h-auto rounded-sm" />
+              </div>
+              <div className="polaroid p2">
+                <img src={photo2} alt="Ideation" className="w-full h-auto rounded-sm" />
+              </div>
+              <div className="polaroid p3">
+                <img src={photo3} alt="Focus mode" className="w-full h-auto rounded-sm" />
+              </div>
+            </div>
           </div>
 
         </div>
