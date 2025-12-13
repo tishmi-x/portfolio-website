@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Trophy } from "lucide-react";
-import achievementImage from "@assets/generated_images/hackathon_trophy.png";
+import achievementImage from "@assets/achievement_update.png";
 
 export function Achievements() {
   return (
