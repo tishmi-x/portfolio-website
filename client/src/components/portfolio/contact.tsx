@@ -46,18 +46,6 @@ export function Contact() {
             </a>
             
             <a 
-              href="https://instagram.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group flex flex-col items-center gap-2"
-            >
-              <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-500 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Instagram className="w-6 h-6" />
-              </div>
-              <span className="text-sm font-medium">Instagram</span>
-            </a>
-
-            <a 
               href="https://www.linkedin.com/in/mishti-goel" 
               target="_blank" 
               rel="noopener noreferrer"
