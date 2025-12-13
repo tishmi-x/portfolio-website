@@ -21,9 +21,9 @@ export function Hero() {
               d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
               fill="none"
             />
-            <text className="text-[9px] uppercase font-bold tracking-[0.2em] fill-primary font-display">
-              <textPath href="#circlePath">
-                MISHTI GOEL UNDERGRADUATE MISHTI GOEL UNDERGRADUATE
+            <text className="text-[10px] uppercase font-bold tracking-[0.25em] fill-primary font-display">
+              <textPath href="#circlePath" startOffset="50%" textAnchor="middle">
+                MISHTI GOEL CS UNDERGRADUATE
               </textPath>
             </text>
           </svg>
