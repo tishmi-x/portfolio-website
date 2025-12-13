@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Coffee, Code, Sparkles } from "lucide-react";
-import avatarImage from "@assets/generated_images/student_developer_avatar.png";
+import avatarImage from "@assets/avatar_update.png";
 
 export function Hero() {
   return (
