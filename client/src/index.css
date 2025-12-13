@@ -49,11 +49,9 @@
      Purple Accent: #6D247A (290 54% 31%)
   */
 
-  /* Base is now Cool Gray */
-  --background: 72 8% 80%;
+  --background: 0 0% 100%;
   --foreground: 0 0% 0%;
 
-  /* Cards and "Accented with White" sections */
   --card: 0 0% 100%;
   --card-foreground: 0 0% 0%;
 
@@ -63,12 +61,11 @@
   --primary: 193 100% 32%; /* Blue Accent */
   --primary-foreground: 0 0% 100%;
 
-  /* Secondary is now White to provide contrast against the gray base */
-  --secondary: 0 0% 100%;
+  --secondary: 72 8% 80%; /* Cool Gray */
   --secondary-foreground: 0 0% 0%;
 
-  --muted: 72 8% 70%; /* Slightly darker gray for muted elements */
-  --muted-foreground: 0 0% 30%;
+  --muted: 72 8% 90%; /* Lighter Cool Gray */
+  --muted-foreground: 0 0% 40%;
 
   --accent: 290 54% 31%; /* Purple Accent */
   --accent-foreground: 0 0% 100%;
@@ -76,8 +73,8 @@
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 0 0% 100%; /* White borders might look nice on gray, or just subtle gray */
-  --input: 0 0% 100%;
+  --border: 72 8% 80%;
+  --input: 72 8% 80%;
   --ring: 193 100% 32%;
 
   --radius: 0.5rem;
