@@ -4,99 +4,63 @@ import photo2 from "@assets/generated_images/hackathon_brainstorming.png";
 import photo3 from "@assets/generated_images/study_session.png";
 
 export function About() {
-  const polaroids = [
-    { src: photo1, rotate: -6, z: 1, caption: "Late nights" },
-    { src: photo2, rotate: 4, z: 2, caption: "Ideation" },
-    { src: photo3, rotate: -3, z: 3, caption: "Focus mode" },
+  const content = [
+    {
+      image: photo1,
+      text: "I’m a Computer Science undergraduate who gradually developed an interest in technology through problem-solving. While I initially chose the field for its stability, my curiosity grew as I began spending time solving coding problems and understanding the logic behind them."
+    },
+    {
+      image: photo2,
+      text: "I started my programming journey with Python and am currently learning C, focusing on strengthening my fundamentals. I enjoy the process of tackling challenging problems — especially the moments when a problem that once felt difficult suddenly becomes simple through understanding."
+    },
+    {
+      image: photo3,
+      text: "As I continue learning, I’m actively exploring different areas within computer science to better understand where my interests align. I also have a basic foundational understanding of HTML and CSS, gained through school-level learning and hands-on practice on platforms like freeCodeCamp. I approach my journey with curiosity and patience, balancing academics, problem-solving, and continuous learning as I grow in the field."
+    }
   ];
 
   return (
     <section id="about" className="py-24 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          
-          {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold font-display mb-8 text-primary">Myself</h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                I’m a Computer Science undergraduate who gradually developed an interest in technology through problem-solving. While I initially chose the field for its stability, my curiosity grew as I began spending time solving coding problems and understanding the logic behind them.
-              </p>
-              <p>
-                I started my programming journey with Python and am currently learning C, focusing on strengthening my fundamentals. I enjoy the process of tackling challenging problems — especially the moments when a problem that once felt difficult suddenly becomes simple through understanding.
-              </p>
-              <p>
-                As I continue learning, I’m actively exploring different areas within computer science to better understand where my interests align. I also have a basic foundational understanding of HTML and CSS, gained through school-level learning and hands-on practice on platforms like freeCodeCamp.
-              </p>
-              <p>
-                I approach my journey with curiosity and patience, balancing academics, problem-solving, and continuous learning as I grow in the field.
-              </p>
-            </div>
-          </motion.div>
+      <div className="container mx-auto px-6 max-w-5xl">
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold font-display mb-16 text-primary text-center md:text-left"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          Myself
+        </motion.h2>
 
-          {/* Polaroid Stack */}
-          <div className="relative h-[400px] w-full flex items-center justify-center mt-12 md:mt-0">
-            <style>{`
-              .polaroid-stack {
-                position: relative;
-                width: 320px;
-                height: 380px;
-              }
-              .polaroid {
-                position: absolute;
-                width: 260px;
-                height: auto;
-                padding: 12px;
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-                transition: transform 0.4s ease, box-shadow 0.4s ease;
-                cursor: pointer;
-              }
-              .p1 {
-                transform: rotate(-8deg) translate(-20px, 10px);
-                z-index: 1;
-              }
-              .p2 {
-                transform: rotate(4deg) translate(20px, -10px);
-                z-index: 2;
-              }
-              .p3 {
-                transform: rotate(-2deg);
-                z-index: 3;
-              }
-              .polaroid:hover {
-                transform: translateY(-20px) scale(1.05);
-                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-                z-index: 20;
-              }
+        <div className="space-y-16">
+          {content.map((item, index) => (
+            <motion.div 
+              key={index}
+              className="flex flex-col md:flex-row gap-8 md:gap-12 items-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2 }}
+            >
+              {/* Image Side */}
+              <div className="w-full md:w-1/3 shrink-0">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg group">
+                  <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300 z-10" />
+                  <img 
+                    src={item.image} 
+                    alt={`About me ${index + 1}`} 
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
 
-              @media (max-width: 768px) {
-                .polaroid-stack {
-                  margin: 0 auto;
-                  transform: scale(0.9);
-                }
-              }
-            `}</style>
-            
-            <div className="polaroid-stack">
-              <div className="polaroid p1">
-                <img src={photo1} alt="Late nights" className="w-full h-auto rounded-sm" />
+              {/* Text Side */}
+              <div className="w-full md:w-2/3">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  {item.text}
+                </p>
               </div>
-              <div className="polaroid p2">
-                <img src={photo2} alt="Ideation" className="w-full h-auto rounded-sm" />
-              </div>
-              <div className="polaroid p3">
-                <img src={photo3} alt="Focus mode" className="w-full h-auto rounded-sm" />
-              </div>
-            </div>
-          </div>
-
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
