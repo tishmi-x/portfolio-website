@@ -1,0 +1,249 @@
+Design a modern, minimalistic, and interactive portfolio website for a Computer Science undergraduate. The website should feel clean, thoughtful, and slightly playful, reflecting curiosity, learning, and early-stage growth as a developer. Use smooth animations, subtle interactions, and a refined visual hierarchy.
+
+Overall Website Structure
+
+Sections (in order):
+
+Hero (Home)
+
+Myself (About)
+
+Skills
+
+Achievements
+
+Contact
+
+A sticky navigation bar should be present at the top with smooth scrolling to sections.
+Instagram and GitHub icons should be fixed at the top-right corner across all sections, linking to the user’s profiles.
+
+Color Scheme & Style
+
+Use the following palette consistently:
+
+White: #FFFFFF (primary background / text contrast)
+
+Cool Gray: #D0D1C9 (secondary background, subtle sections)
+
+Black: #000000 (primary text)
+
+Blue Accent: #007FA3 (highlights, links, hover states)
+
+Purple Accent: #6D247A (secondary accent for emphasis)
+
+Overall style: modern, minimal, student-hackathon aesthetic, inspired by interactive portfolio showcases.
+
+Typography
+
+Use a modern font pairing:
+
+Headings: Space Grotesk (bold, geometric, contemporary)
+
+Body text: Inter (highly readable, clean, professional)
+
+Maintain strong typographic hierarchy with generous spacing.
+
+1. Hero Section (Home)
+Content
+
+Circular center-aligned avatar based on the user’s photo
+
+A broad rotating circular border around the avatar with the text:
+“Mishti Goel · Fresher”
+The border text should rotate smoothly, inspired by the reference website.
+
+Below the avatar:
+
+Name (bold, large): Mishti Goel
+
+Designation: Computer Science Undergraduate | Beginner Developer
+
+Catchy line:
+“Currently juggling assignments, problem-solving, curiosity, caffeine, and a little chaos.”
+
+Include subtle SVG icons near the tagline (minimal, lightweight).
+
+Design & Interaction
+
+Center-aligned layout
+
+Smooth rotation animation for the border
+
+Minimal background with soft gradients or neutral tones
+
+No CTA buttons in this section
+
+2. Myself Section (About)
+Layout
+
+Split layout:
+
+Left: Text content (bio)
+
+Right: Interactive polaroid-style image stack
+
+Images should appear as scattered polaroids with:
+
+White frames
+
+Soft shadows
+
+Slight rotations
+
+Layered using absolute positioning
+
+Bio Content
+
+Include a concise, readable version of the provided bio highlighting:
+
+Growth of interest through problem-solving
+
+Python beginnings, learning C
+
+Enjoyment of logical clarity moments
+
+Exploration of CS domains
+
+Foundational HTML/CSS exposure
+
+Curious, patient learning mindset
+
+Interactions
+
+On hover:
+
+Top polaroid lifts, rotates slightly, and scales up
+
+Smooth, subtle animations (no aggressive motion)
+
+CSS or Framer Motion preferred
+
+On mobile:
+
+Images stack below text
+
+Animations degrade gracefully
+
+3. Skills Section
+Heading
+
+Skills
+
+Layout
+
+Create separate cards for each skill category
+
+Each card should have:
+
+Image/illustration box on one side
+
+Text content on the other
+
+Alternate layout direction for each category (left-right, right-left)
+
+Skill Categories & Content
+
+Programming
+
+Python (basic)
+
+C (learning)
+
+DSA (learning)
+
+Web
+
+HTML (basic)
+
+CSS (basic)
+
+Concepts
+
+Problem-solving
+
+Competitive programming (beginner)
+
+Data structures (basics)
+
+Design
+
+Minimal cards with soft shadows
+
+Light hover interaction
+
+Icons or abstract illustrations allowed
+
+Clean spacing and readable typography
+
+4. Achievements Section
+Heading
+
+Achievements
+
+Layout
+
+Right-aligned image or illustration
+
+Left-aligned interactive achievement card
+
+Achievement Content
+
+🏆 DevJams Hackathon — Winner
+
+Worked on structuring and designing the final presentation
+
+Participated in ideation discussions and team decision-making
+
+Gained experience working in a collaborative, time-constrained environment
+
+Interaction
+
+Card hover effects (lift, glow, or border accent)
+
+Minimal but celebratory feel
+
+Avoid clutter—focus on one highlighted achievement
+
+5. Contact Section
+Layout & Style
+
+Inspired by the referenced “chat-style” contact section
+
+Replicate the conversational UI layout
+
+Replace email text with:
+mishtigoelofficial@gmail.com
+
+Color theme must match the rest of the website
+
+Content
+
+Chat-style message inviting contact
+
+Below the chat:
+
+SVG Instagram icon (linked)
+
+SVG GitHub icon (linked)
+
+Links
+
+Email: mishtigoelofficial@gmail.com
+
+LinkedIn: www.linkedin.com/in/mishti-goel
+
+GitHub: https://github.com/tishmi-x
+
+Additional Requirements
+
+Smooth scrolling between sections
+
+Lightweight implementation
+
+Consistent animation language throughout
+
+Fully responsive design
+
+Professional yet personal tone
+
+The final result should feel like a thoughtfully designed student portfolio that balances minimalism, personality, and interactivity while clearly representing growth, curiosity, and potential.
