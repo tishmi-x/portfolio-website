@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Trophy } from "lucide-react";
 import achievementImage from "@assets/achievement_update.png";
 
 export function Achievements() {
@@ -35,15 +34,15 @@ export function Achievements() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-sm text-secondary-foreground/90">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 shrink-0" />
-                  Structured and designed the final presentation for the pitch.
+                  Worked on structuring and designing the final presentation
                 </li>
                 <li className="flex items-start gap-3 text-sm text-secondary-foreground/90">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 shrink-0" />
-                  Led ideation discussions and critical team decision-making.
+                  Participated in ideation discussions and team decision-making
                 </li>
                 <li className="flex items-start gap-3 text-sm text-secondary-foreground/90">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 shrink-0" />
-                  Gained hands-on experience in a high-pressure collaborative environment.
+                  Gained experience working in a collaborative, time-constrained environment
                 </li>
               </ul>
             </div>
